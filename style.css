@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ms+Madi&display=swap");
+
+body {
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  width: 100%;
+  height: 9vh;
+
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.leftHeader {
+  padding-left: 0.7vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-size: 7vh;
+  font-family: "Black Ops One", cursive;
+  color: blue;
+}
+.centerHeader {
+  width: 15%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.circle {
+  width: 8%;
+  height: 0;
+  padding-bottom: 8%;
+  border-radius: 50%;
+  background-color: antiquewhite;
+}
+.circle:nth-child(1),
+.circle:nth-child(8) {
+  background-color: darkblue;
+}
+.rightHeader {
+  width: 12%;
+  height: 100%;
+  padding-right: 0.7vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 4.2vh;
+  color: blue;
+}
+.rightHeader:hover {
+  font-family: "Black Ops One", cursive;
+}
+section,
+.sectionCover {
+  margin-top: 9vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 85vh;
+  grid-auto-rows: 85vh;
+}
+.sectionCover {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.contentBox,
+.contentBoxCover {
+  grid-column: span 1;
+  grid-row: span 1;
+  display: grid;
+  grid-template-rows: 20fr 1fr;
+  background-color: darkblue;
+}
+.contentBoxCover:hover {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.contentBoxCover___image,
+.contentBox___image {
+  grid-row: span 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentBox:nth-child(7n + 2),
+.contentBoxCover:nth-child(7n + 2),
+.circle:nth-child(2) {
+  background-color: rgb(24, 14, 74);
+}
+.contentBox:nth-child(7n + 3),
+.contentBoxCover:nth-child(7n + 3),
+.circle:nth-child(3) {
+  background-color: rgb(0, 71, 171);
+}
+.contentBox:nth-child(7n + 4),
+.contentBoxCover:nth-child(7n + 4),
+.circle:nth-child(4) {
+  background-color: rgb(35, 46, 100);
+}
+.contentBox:nth-child(7n + 5),
+.contentBoxCover:nth-child(7n + 5),
+.circle:nth-child(5) {
+  background-color: rgb(100, 83, 148);
+}
+.contentBox:nth-child(7n + 6),
+.contentBoxCover:nth-child(7n + 6),
+.circle:nth-child(6) {
+  background-color: rgb(91, 50, 86);
+}
+.slantText {
+  width: 70%;
+  text-align: center;
+  font-family: "Ms Madi", cursive;
+  font-size: 6vh;
+  color: white;
+}
+.contentBottom {
+  grid-row: span 1;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: white;
+}
+.picture {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#img01 {
+  width: 70%;
+  height: 70%;
+  background-image: url(./imgs/img01.jpg);
+}
+#img02 {
+  width: 50%;
+  height: 50%;
+  background-image: url(./imgs/img02.jpg);
+}
+#img021 {
+  width: 70%;
+  height: 70%;
+  background-position: left;
+  background-image: url(./imgs/img021.jpg);
+}
+#img04 {
+  width: 50%;
+  height: 50%;
+  background-image: url(./imgs/img04.jpg);
+}
+#img07 {
+  width: 50%;
+  height: 50%;
+  background-image: url(./imgs/img07.jpg);
+}
+section .contentBox:nth-child(4) {
+  background-image: url(./imgs/img041.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sectionCover .contentBoxCover:nth-child(5) {
+  background-image: url(./imgs/img05.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#contentBoxCover___image___bottomText {
+  width: 53%;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.boldContent {
+  font-family: "Black Ops One", cursive;
+  font-size: 8vh;
+}
+.contentBoxCover:nth-child(8) {
+  background-image: url(./imgs/img08.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contentBox:nth-child(8) {
+  background-image: url(./imgs/img08.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#newsLetter {
+  font-size: 8.5vh;
+  font-family: "Black Ops One", cursive;
+}
+
+.contentBox #newsLetter:nth-child(2) {
+  color: rgb(24, 14, 74);
+}
+.contentBox #newsLetter:nth-child(3) {
+  color: rgb(0, 71, 171);
+}
+.contentBox #newsLetter:nth-child(4) {
+  color: rgb(35, 46, 100);
+}
+.contentBox #newsLetter:nth-child(5) {
+  color: rgb(100, 83, 148);
+}
+.contentBox #newsLetter:nth-child(6) {
+  color: white;
+}
+.contentBox #newsLetter:nth-child(7) {
+  color: darkblue;
+}
+.contentBottom button {
+  width: 20%;
+  height: 7vh;
+  border-radius: 25% / 50%;
+  border: 0;
+  background-color: rgb(204, 167, 237);
+}
+input {
+  width: 70%;
+  height: 6vh;
+  border-radius: 8% / 50%;
+  border: 0;
+  background-color: rgb(204, 167, 237);
+}
+
+footer {
+  grid-column: 1/-1;
+  height: 45vh;
+
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  background-color: black;
+}
+.leftSide,
+.rightSide {
+  display: flex;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  font-size: 2vh;
+}
+.leftSide p:hover,
+.rightSide p:hover {
+  text-decoration: underline;
+}
+.rightSide {
+  text-align: end;
+  padding-right: 1vw;
+}
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonBox button {
+  width: 15%;
+  height: 15%;
+  font-size: 4vh;
+  font-weight: 800;
+  border-radius: 10% / 5%;
+  background-color: blue;
+}
+.buttonBox button:hover {
+  background-color: aqua;
+}
